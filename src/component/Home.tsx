@@ -1,17 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Navbar } from "flowbite-react";
+import { Button, Navbar } from "flowbite-react";
 
 export function Home() {
   return (
     <div className="min-h-screen flex flex-col bg-gray-100">
       <Navbar fluid rounded className="bg-white shadow-md">
         <Navbar.Brand className="flex items-center">
-        
         </Navbar.Brand>
         <Navbar.Collapse>
           <div className="flex space-x-4">
-            
             <Navbar.Link
               as={Link}
               to="/"
@@ -19,7 +17,6 @@ export function Home() {
             >
               Home
             </Navbar.Link>
-            
             <Navbar.Link
               as={Link}
               to="/tasks"
@@ -40,6 +37,7 @@ export function Home() {
         >
           View Task List
         </Link>
+        <Button color="blue">Register</Button>
       </div>
     </div>
   );
